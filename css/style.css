@@ -273,6 +273,8 @@ article{
         height: 120px;
     }
 
+    
+
     .logo-scroll{
         height: 60px;
     }
@@ -286,7 +288,6 @@ article{
     }
 
     .chamada-textos{
-        text-align: center;
         padding-left: 0px;
         padding-right: 0px;
     }
