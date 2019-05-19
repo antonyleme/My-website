@@ -28,6 +28,7 @@ body{
     background-color: #1de054;
     color: white !important;
     box-shadow: 0px 2px 0px #18943b;
+    border-radius: 2px;
 }
 
 .logo-expanded{
@@ -80,7 +81,7 @@ header{
 }
 
 .btn{
-    border-radius: 0;
+    border-radius: 4px;
     font-family: HelveticaNeue;
     margin-top: 20px;
     transition: 0.5s;
