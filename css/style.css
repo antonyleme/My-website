@@ -19,20 +19,26 @@ body{
     word-wrap: break-word;
 }
 
+.navbar{
+    padding: 5px 1rem;
+}
+
 .nav-item{
     margin-left: 10px;
     margin-right: 10px;
 }
 
 .nav-contato{
+    width: 90px;
     background-color: #1de054;
     color: white !important;
     box-shadow: 0px 2px 0px #18943b;
-    border-radius: 2px;
+    border-radius: 4px;
+    text-align: center;
 }
 
 .logo-expanded{
-    height: 70px;
+    height: 55px;
     transition: 0.3s;
 }
 
@@ -270,14 +276,24 @@ article{
 }
 
 @media (min-width: 1024px){
+    .chamada{
+        background-image: url("../svg/invisivel-ilustracao.svg");
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: 35%;
+        padding: 50px;
+    }
+    
     .logo-expanded{
         height: 120px;
     }
 
-    
-
     .logo-scroll{
         height: 60px;
+    }
+
+    .navbar{
+        padding: .3rem 1rem;
     }
 
     .pc{
@@ -316,8 +332,9 @@ article{
 
 @media (min-width: 1200px) 
 {
+
     .banner-title{
-        font-size: 4rem;
+        font-size: 3rem;
         font-family: HelveticaNeue;
     }
     
