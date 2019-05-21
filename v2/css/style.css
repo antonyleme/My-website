@@ -1,0 +1,172 @@
+@import url('https://rsms.me/inter/inter.css');
+
+*{
+    font-family: 'Inter', Roboto;
+}
+
+/* Nav */
+
+nav{
+    height: 100px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    width: 100%;
+}
+
+nav a{
+    display: inline-block;
+}
+
+nav ul{
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-weight: 500;
+    font-size: 1.2em;
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+nav ul li:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/* Header */
+
+header{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    background-image: url(../img/tech-bg.jpg);
+    background-size: cover;
+    color: white;
+}
+
+header h1{
+    font-size: 4em;
+    font-weight: bolder;
+}
+
+header p{
+    font-size: 1.3em;
+    margin-bottom: 60px;
+}
+
+/* Botao */
+
+.botao{
+    border: 3px solid white;
+    border-radius: 1000px;
+    padding: 20px 45px;
+    font-size: 2em;
+    color: white;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.botao:hover{
+    
+}
+
+.botaoCorpo{
+    border-color:#009bdb;
+    color: #009bdb;
+    font-weight: 700;
+    border-width: 4px;
+}
+
+/* Link */
+
+a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Section */
+
+section{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.section-title{
+    font-weight: bold;
+    color: #8e8e93;
+}
+
+.section-subtitle{
+    font-weight: bold;
+    color: #009bdb;
+    font-size: 1.8em;
+}
+
+.section-p{
+    width: 70%;
+    margin-bottom: 5%;
+}
+
+.section-title::after{
+    margin-top: 10px;
+    display: block;
+    content: "";
+    background-color: #8e8e93;
+    width: 70px;
+    height: 6px;
+    margin-bottom: 20px;
+}
+
+/* Article */
+
+article img{
+    max-width: 45%;
+}
+
+article h1{
+    color: #009bdb;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+article p{
+    text-align: justify;
+}
+
+.servicosArticle{
+    text-align: center;
+    margin: 10px 20px;
+    transition: 1s;
+}
+
+.chamada{
+    text-align: center;
+}
+
+.chamada h1{
+    color: #009bdb;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.servicosArticle:hover{
+    transform: scale(1.2);
+}
+
+.porqueArticle h1{
+    font-size: 1.2em;
+}
