@@ -1,7 +1,7 @@
 @import url('https://rsms.me/inter/inter.css');
 
 *{
-    font-family: 'Inter', Roboto;
+    font-family: 'Inter', Roboto, sans-serif;
 }
 
 /* Nav */
@@ -12,7 +12,21 @@ nav{
     display: flex;
     align-items: center;
     top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 100%;
+}
+
+.logo{
+    position: relative;
+    top: -10px;
+    width: auto;
+    height: 80px;
+    transition: 0.2s;
+}
+
+.logo:hover{
+    transform: scale(1.2);
 }
 
 nav a{
@@ -38,6 +52,11 @@ nav ul li{
 }
 
 nav ul li:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.nav-active{
     opacity: 1;
     transform: scale(1.2);
 }
@@ -77,7 +96,9 @@ header p{
 }
 
 .botao:hover{
-    
+    background-color: #009bdb;
+    color: white;
+    border-color: #009bdb;
 }
 
 .botaoCorpo{
@@ -129,26 +150,49 @@ section{
 
 /* Article */
 
-article img{
-    max-width: 45%;
-}
-
 article h1{
-    color: #009bdb;
-    font-size: 1.8em;
+    color: inherit;
+    font-size: 1.5em;
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 20px;
+    text-transform: uppercase;
+    transition-timing-function: ease-in;
 }
 
 article p{
     text-align: justify;
 }
 
+.articleContent{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .servicosArticle{
     text-align: center;
-    margin: 10px 20px;
+    margin: 10px 0px;
     transition: 1s;
+    background-color: #eeeeee;
+    border-radius: 15px;
+    width: 95%;
+    height: 350px;
+    color: black;
+}
+
+.servicosArticle:hover{
+    color: white;
+    background-color: #009bdb;
+}
+
+.porqueArticle h1{
+    color: #009bdb;
+}
+
+.article-img{
+    width: 33%;
+    height: 80px;
 }
 
 .chamada{
