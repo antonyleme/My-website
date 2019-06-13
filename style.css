@@ -158,7 +158,6 @@ table td{
     }
 
     .produto:hover{
-        z-index: 9998;
         transform: scale(1.1);
     }
 
