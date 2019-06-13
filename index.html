@@ -8,6 +8,7 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
         <title>RAM Soluções</title>
     </head>
@@ -74,7 +75,7 @@
                     <h1 class="titulo">Smartphones reformados</h1>
                     <div class="row">
                         <div class="col-12 col-md-3 mb-2 mt-2 mb-md-3 mt-md-3">
-                            <div class="produto col-12 border bg-white">
+                            <div class="produto col-12 border bg-white" data-aos="flip-left">
                                 <div class="row">
                                     <div class="col-5 col-md-12">
                                         <img class="img-fluid" src="mi.png">
@@ -91,7 +92,7 @@
                         </div>
 
                         <div class="col-12 col-md-3 mb-2 mt-2 mb-md-3 mt-md-3">
-                            <div class="produto col-12 border bg-white">
+                            <div class="produto col-12 border bg-white" data-aos="flip-left">
                                 <div class="row">
                                     <div class="col-5 col-md-12">
                                         <img class="img-fluid" src="mi.png">
@@ -109,7 +110,7 @@
 
                         
                         <div class="col-12 col-md-3 mb-2 mt-2 mb-md-3 mt-md-3">
-                            <div class="produto col-12 border bg-white">
+                            <div class="produto col-12 border bg-white" data-aos="flip-left">
                                 <div class="row">
                                     <div class="col-5 col-md-12">
                                         <img class="img-fluid" src="mi.png">
@@ -126,7 +127,7 @@
                         </div>
 
                         <div class="col-12 col-md-3 mb-2 mt-2 mb-md-3 mt-md-3">
-                            <div class="produto col-12 border bg-white">
+                            <div class="produto col-12 border bg-white" data-aos="flip-left">
                                 <div class="row">
                                     <div class="col-5 col-md-12">
                                         <img class="img-fluid" src="mi.png">
@@ -143,7 +144,7 @@
                         </div>
 
                         <div class="col-12 col-md-3 mb-2 mt-2 mb-md-3 mt-md-3">
-                            <div class="produto col-12 border bg-white">
+                            <div class="produto col-12 border bg-white" data-aos="flip-left">
                                 <div class="row">
                                     <div class="col-5 col-md-12">
                                         <img class="img-fluid" src="mi.png">
@@ -160,7 +161,7 @@
                         </div>
 
                         <div class="col-12 col-md-3 mb-2 mt-2 mb-md-3 mt-md-3">
-                            <div class="produto col-12 border bg-white">
+                            <div class="produto col-12 border bg-white" data-aos="flip-left">
                                 <div class="row">
                                     <div class="col-5 col-md-12">
                                         <img class="img-fluid" src="mi.png">
@@ -179,7 +180,7 @@
                 </div>
             </section>
             <div class="container">
-                <section id="manutencao" class="mb-5 mt-5 pt-5 pb-5 bg-white border w-100">
+                <section id="manutencao" class="mb-5 mt-5 pt-5 pb-5 bg-white border w-100" data-aos="zoom-out">
                     <div class="container text-center">
                         <h1>Smartphone em manutenção?</h1>
                         <div class="row mt-3 d-flex align-items-center justify-content-center">
@@ -259,7 +260,7 @@
         <!-- Fim dos Modais -->
 
         <!-- Footer -->
-        <footer id="contato" class="page-footer font-small bg-dark text-white pt-4">
+        <footer id="contato" class="page-footer font-small bg-dark text-white pt-4" data-aos="fade-left">
         <!-- Footer Links -->
         <div class="container text-center text-md-left">
             <!-- Call to action -->
@@ -313,8 +314,9 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
+            AOS.init();
             $(document).ready(function(){
                 $('.link-scroll').click(function(e){
                     
