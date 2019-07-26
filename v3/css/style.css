@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif!important;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F9F9F9;
+}
+
+nav{
+    margin: 20px 0;
+}
+
+header{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.logomarca{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.leme{
+    font-style: italic;
+    font-weight: normal;
+}
+
+h1{
+    font-weight: bold;
+}
+
+.active{
+    font-weight: bold;
+}
+
+.nav-item{
+    margin-left: 30px;
+}
+
+.contatoBtn{
+    display: inline-block;
+    background-color: #536DFE;
+    padding: 7px 30px;
+    color: white!important;
+    border-radius: 5px;
+    border: 2px solid #536DFE;
+}
+
+.chamadaBtn{
+    display: inline-block;
+    background-color: #536DFE;
+    padding: 7px 30px;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid #536DFE;
+    margin-right: 20px;
+}
+
+.chamadaBtnOutlined{
+    display: inline-block;
+    background-color: transparent;
+    padding: 7px 30px;
+    color: #536DFE;
+    border-radius: 5px;
+    border: 2px solid #536DFE;
+}
+
+a{
+    color: inherit;
+}
+
+a:hover{
+    text-decoration: none;
+    color: inherit!important;
+}
+
+#servicos{
+    background-image: url("../svg/bg/servicos.svg");
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+article{
+    background-color: white;
+    box-shadow: 0px 8px 44px rgba(0,0,0,.16);
+    padding: 50px 40px;
+    margin: 40px 0;
+    border-radius: 5px;
+}
+
+article h1{
+    font-size: 1.8em;
+    color: #707070;
+    margin-bottom: 30px;
+}
+
+p{
+    color: #707070;
+}
+
+#portfolio{
+    background-image: url("../svg/bg/portfolio.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    min-height: 700px;
+    padding: 100px 0;
+}
+
+#clientes{
+    background-image: url("../svg/bg/clientes.svg");
+    background-position: left;
+    background-repeat: no-repeat;
+    min-height: 700px;
+    padding: 100px 0;
+}
+
+.clientes img{
+    margin: 20px 30px;
+}
+
+.clientes img:nth-child(1){
+    margin-left: 0;
+}
+
+.clientes img:nth-child(3n){
+    margin-right: 0;
+}
+
+#contato{
+    background-image: url("../svg/bg/contato.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 600px;
+}
+
+#contato h1{
+    color: #536DFE;
+    font-size: 5em;
+    margin-bottom: 50px;
+}
+
+#contato p{
+    margin-bottom: 30px;
+}
+
+#contato input{
+    border: none;
+    padding: 12px 20px;
+    color: #C1C1C1;
+    box-shadow: 10px 8px 44px rgba(0,0,0,.16);
+}
+
+#contato input[type="text"]{
+    background-color: white;
+    width: 60%;
+    border-radius: 5px 0px 0px 5px;
+}
+
+#contato input[type="submit"]{
+    background-color: #536DFE;
+    color: white;
+    width: 10%;
+    border-radius: 0px 5px 5px 0px;
+}
+
+#contato h2{
+    color: #707070;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.chamarBtn{
+    display: inline-block;
+    background-color: #2ADE53;
+    padding: 9px 40px;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid #2ADE53;
+    box-shadow: 10px 8px 44px rgba(0,0,0,.16);
+}
+
+#contato h3{
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #707070;
+    font-weight: bold;
+}
+
+footer{
+    background-color: #3F3D56;
+    text-align: center;
+    color: white;
+    padding: 50px 0;
+    margin-top: 100px;
+}
+
+footer h1{
+    font-size: 4em;
+}
+
+footer p{
+    color: white;
+}
