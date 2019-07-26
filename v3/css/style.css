@@ -1,9 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
-
-*{
-    font-family: 'Open Sans', sans-serif!important;
-}
-
 body, html{
     margin: 0;
     padding: 0;
@@ -11,11 +6,28 @@ body, html{
 
 body{
     background-color: #F9F9F9;
+    font-family: 'Open Sans', sans-serif!important;
 }
 
 nav{
     margin: 20px 0;
 }
+
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-toggler:focus{
+    animation-name: example;
+    animation-duration: 0.6s;
+    outline: none;
+}
+
+@keyframes example {
+    0%   {transform: rotateX(0deg);}
+    50%  {transform: rotateX(60deg);}
+    100% {transform: rotateX(0deg);}
+  }
 
 header{
     margin-top: 100px;
@@ -71,6 +83,10 @@ h1{
     margin-right: 20px;
 }
 
+.chamadaBtn:hover{
+    color: white!important;
+}
+
 .chamadaBtnOutlined{
     display: inline-block;
     background-color: transparent;
@@ -80,13 +96,16 @@ h1{
     border: 2px solid #536DFE;
 }
 
+.chamadaBtnOutlined:hover{
+    color: #536DFE!important;
+}
+
 a{
     color: inherit;
 }
 
 a:hover{
     text-decoration: none;
-    color: inherit!important;
 }
 
 #servicos{
@@ -131,6 +150,11 @@ p{
 
 .clientes img{
     margin: 20px 30px;
+    opacity: .7;
+}
+
+.clientes img:hover{
+    opacity: 1;
 }
 
 .clientes img:nth-child(1){
@@ -174,7 +198,7 @@ p{
 #contato input[type="submit"]{
     background-color: #536DFE;
     color: white;
-    width: 10%;
+    min-width: 10%;
     border-radius: 0px 5px 5px 0px;
 }
 
@@ -192,6 +216,10 @@ p{
     border-radius: 5px;
     border: 2px solid #2ADE53;
     box-shadow: 10px 8px 44px rgba(0,0,0,.16);
+}
+
+.chamarBtn:hover{
+    color: white!important;
 }
 
 #contato h3{
@@ -215,4 +243,100 @@ footer h1{
 
 footer p{
     color: white;
+}
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff!important;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+@media screen and (max-width: 991px){
+    #contato h1{
+        color: #536DFE;
+        font-size: 4em;
+        margin-bottom: 50px;
+    }
+
+    footer h1{
+        font-size: 2.5em;
+    }
+    .contatoBtn{
+        display: inline-block;
+        background-color: transparent;
+        padding: 7px 30px;
+        color: rgba(0,0,0,.5)!important;
+        border-radius: 5px;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .headerContainer{
+        background-image: none;
+        min-height: 450px;
+    }
+    .navbar-nav{
+        text-align: center;
+    }
+    .nav-item{
+        margin-left: 0px;
+    }
+    .wrapper{
+        display: flex; 
+        flex-direction: column;
+    }
+
+    .articleTextos{
+        order: 2;
+    }
+    .articleImagem{
+        order: 1;
+        padding-bottom: 30px;
+    }
+    #contato input[type="text"]{
+        width: 75%;
+    }
+    
+    #contato input[type="submit"]{
+        width: 25%;
+    }
+    #contato h2{
+        font-size: 1.6em;
+    }
 }
