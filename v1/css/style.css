@@ -1,0 +1,411 @@
+@font-face {
+    font-family: HelveticaNeue;
+    src: url(../fonts/HelveticaNeue-Black.woff);
+}
+
+@font-face {
+    font-family: HelveticaNeue-Thin;
+    src: url(../fonts/HelveticaNeue-Thin.woff);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+    transition: linear 0.5s;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    word-wrap: break-word;
+}
+
+.navbar{
+    padding: 5px 1rem;
+}
+
+.nav-item{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav-contato{
+    width: 90px;
+    background-color: #1de054;
+    color: white !important;
+    box-shadow: 0px 2px 0px #18943b;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.logo-expanded{
+    height: 55px;
+    transition: 0.3s;
+}
+
+.active{
+    font-weight: bolder;
+}
+
+.bg-light-blue{
+    background-color: #009bdb;
+}
+
+header{
+    height: 100vh;
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+    background-color: #009bdb;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.chamada{
+    margin: 100px 0;
+}
+
+.chamada-textos{
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.banner-title{
+    font-family: HelveticaNeue;
+}
+
+
+.btn:hover{
+    transform: translateY(-10px);
+}
+
+.btn{
+    border-radius: 4px;
+    font-family: HelveticaNeue;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.btn-verde{
+    background-color: #1de054;
+    padding: 10px 50px 10px 50px;
+    color: white;
+    box-shadow: 0px 3px 0px #18943b;
+}
+
+.btn-verde:hover, .btn-azul:hover{
+    color: white;
+}
+
+.btn-card{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+.btn-azul{
+    background-color: #009bdb;
+    padding: 10px 50px 10px 50px;
+    color: white;
+    box-shadow: 0px 3px 0px #167ca6;
+}
+
+.ilustracao{
+    width: 100%;
+}
+
+.icon-scroll,
+.icon-scroll:before{
+  position: absolute;
+  bottom: 10px;
+}
+
+.icon-scroll{
+  width: 22px;
+  height: 40px;
+  box-shadow: inset 0 0 0 2px #fff;
+  border-radius: 25px;
+}
+
+.icon-scroll:before{
+  content: '';
+  width: 8px;
+  height: 8px;
+  margin-left: -4px;
+  background: #fff;
+  bottom: 8px;
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+
+@keyframes scroll{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+.content-title{
+    font-family: HelveticaNeue;
+    color: #009bdb;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.content-subtitle{
+    text-align: center;
+    color: #767676;
+    font-size: 1.5rem;
+}
+
+article{
+    margin: 50px 0;
+}
+
+.article-title{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #009bdb;
+}
+
+.article-text{
+    color: #767676;
+}
+
+.article-servico-header{
+    text-align: center;
+    color: #009bdb;
+}
+
+.article-servico-title{
+    margin: 20px 0;
+}
+
+.article-servico-body{
+    text-align: justify;
+    color: #767676
+}
+
+.article-servico-footer{
+    color: #767676;
+}
+
+.article-service-price{
+    color: #009bdb;
+    font-weight: bolder;
+    margin-top: -8px;
+}
+
+.interessou{
+    font-size: 2rem;
+    color: #009bdb;
+    margin: 0;
+}
+
+.sessao-margem{
+    margin-top: 100px;
+}
+
+.quem-sou-title{
+    color: #009bdb;
+}
+
+.quem-sou-texto{
+    color: #767676;
+}
+
+.row-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.ordertext{
+    order: 2;
+}
+
+.orderimg{
+    order: 1;
+}
+
+.pc{
+    display: none;
+}
+
+.mobile{
+    display: block;;
+    text-align: center;
+}
+
+.botao-fale{
+    text-align: center;
+}
+
+.contato{
+    background-color: #1E1E1E;
+    color: white;
+}
+
+.enviar-btn{
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-control{
+    border-radius: 0;
+    background-color: transparent;
+    border-color: white;
+}
+
+.contact-link{
+    color: white;
+    transition: 0.5s;
+}
+
+.contact-link:hover{
+    text-decoration: none;
+}
+
+@media (min-width: 1024px){
+    .chamada{
+        background-image: url("../svg/invisivel-ilustracao.svg");
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: 35%;
+        padding: 50px;
+    }
+    
+    .logo-expanded{
+        height: 120px;
+    }
+
+    .logo-scroll{
+        height: 60px;
+    }
+
+    .navbar{
+        padding: .3rem 1rem;
+    }
+
+    .pc{
+        display: block;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    .chamada-textos{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .botao-fale{
+        text-align: left;
+    }
+
+    .row-flex{
+        flex-direction: row;
+    }
+
+    .ordertext{
+        order: 1;
+    }
+    
+    .orderimg{
+        order: 2;
+    }
+
+    .article-servico{
+        padding: 0 40px;
+    }
+}
+
+@media (min-width: 1200px) 
+{
+
+    .banner-title{
+        font-size: 3rem;
+        font-family: HelveticaNeue;
+    }
+    
+    .maior{
+        font-size: 5rem;
+    }
+    
+    .banner-subtitle{
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+
+    .btn{
+        font-size: 2rem;
+    }
+
+    .btn-verde{
+        background-color: #1de054;
+        padding: 10px 50px 10px 50px;
+        color: white;
+        box-shadow: 0px 6px 0px #18943b;
+    }
+
+    .btn-azul{
+        background-color: #009bdb;
+        padding: 10px 50px 10px 50px;
+        color: white;
+        box-shadow: 0px 6px 0px #167ca6;
+    }
+
+    .content-title{
+        font-size: 4rem;
+    }
+
+    .content-subtitle{
+        font-family: HelveticaNeue-Thin;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .chamada-textos{
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .btn-card{
+        font-size: 1rem;
+    }
+
+    .icon-scroll:before{
+        content: '';
+        width: 8px;
+        height: 8px;
+        background: #fff;
+        margin-left: -4px;
+        top: 8px;
+        border-radius: 4px;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-name: scroll;
+      }
+      
+      @keyframes scroll{
+        0%{
+          opacity: 1;
+        }
+        100%{
+          opacity: 0;
+          transform: translateY(20px);
+        }
+      }
+}

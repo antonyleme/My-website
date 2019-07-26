@@ -1,59 +1,32 @@
-// Debounce do Lodash
-debounce = function(func, wait, immediate) {
-	var timeout;
-	return function() {
-		var context = this, args = arguments;
-		var later = function() {
-			timeout = null;
-			if (!immediate) func.apply(context, args);
-		};
-		var callNow = immediate && !timeout;
-		clearTimeout(timeout);
-		timeout = setTimeout(later, wait);
-		if (callNow) func.apply(context, args);
-	};
-};
+var $items = $('.link-scroll');
 
+$(document).ready(function(){
+    $('.link-scroll').click(function(e){
+        
+        var linkhref = $(this).attr('href');
 
-(function(){
-	var $target = $('.anime'),
-			animationClass = 'anime-start',
-			offset = $(window).height();
+        $('html, body').animate({
+            scrollTop: $(linkhref).offset().top -20
+        });
 
-	function animeScroll() {
-		var documentTop = $(document).scrollTop();
-
-		$target.each(function(){
-			var itemTop = $(this).offset().top;
-			if (documentTop > itemTop - offset) {
-                $(this).addClass(animationClass);
-			} else {
-				$(this).removeClass(animationClass);
-			}
-		});
-	}
-
-	animeScroll();
-
-	$(document).scroll(debounce(function(){
-		animeScroll();
-	}, 200));
-})();
-
-var $items = $('.nav-link');
-
-$items.bind('click', function(){
-    $items.each(function(){
-        $(this).removeClass('active');
+        e.preventDefault();
     });
-    $(this).addClass('active');
 });
 
-$(document).scroll(function(){
-	$logo = $('.logo-expanded');
-	if($(document).scrollTop() == 0){
-		$logo.removeClass('logo-scroll');
-	}else{
-		$logo.addClass('logo-scroll');
-	}
+$('.nav-link').on('click', function(){
+    $('.navbar-toggler').click(); //bootstrap 4.x
+});
+
+// ===== Scroll to Top ==== 
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
 });
