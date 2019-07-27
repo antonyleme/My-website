@@ -249,8 +249,12 @@ p{
 
 #contato input[type="text"]{
     background-color: white;
-    width: 60%;
-    border-radius: 5px 0px 0px 5px;
+    width: 30%;
+    border-radius: 0px 0px 0px px;
+}
+
+#contato input[type="text"]:nth-child(1){
+    border-radius: 5px 0 0 5px;
 }
 
 #contato input[type="submit"]{
@@ -396,7 +400,7 @@ footer p{
         padding-bottom: 30px;
     }
     #contato input[type="text"]{
-        width: 75%;
+        width: 37.5%;
     }
     
     #contato input[type="submit"]{
