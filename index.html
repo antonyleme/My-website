@@ -106,9 +106,20 @@
                     <h1>Portfólio</h1>
                     <p>Confira alguns dos meus trabalhos já realizados abaixo e passe o mouse ou clique sobre eles para ver as descrições e as imagens.</p>
                     <div class="row mt-5">
-                        <div class="col-6 col-md-4">
+                        <div class="col-6 col-md-4 mb-4">
+                            <div class="portfolioItem" data-toggle="modal" data-target="#percursoModal">
+                                <img src="img/portfolio/percurso/previa.png" alt="Site Percurso Cataguases" class="img-fluid">
+                                <div class="portfolioBotao">
+                                    <div class="d-block text-center">
+                                        <p class="portfolioLegenda">Site do Percurso</p>
+                                        <button class="chamadaBtn mr-0" data-toggle="modal" data-target="#percursoModal">Ver mais</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 mb-4">
                             <div class="portfolioItem" data-toggle="modal" data-target="#petModal">
-                                <img src="img/portfolio/petkta/index.png" alt="Site Estação Pet Kta index" class="img-fluid">
+                                <img src="img/portfolio/petkta/previa.png" alt="Site Estação Pet Kta" class="img-fluid">
                                 <div class="portfolioBotao">
                                     <div class="d-block text-center">
                                         <p class="portfolioLegenda">Site da PetKta</p>
@@ -117,9 +128,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-md-4">
+                        <div class="col-6 col-md-4 mb-4">
                             <div class="portfolioItem" data-toggle="modal" data-target="#ramModal">
-                                <img src="img/portfolio/ram/INDEX.png" alt="Site RAM Soluções index" class="img-fluid">
+                                <img src="img/portfolio/ram/previa.png" alt="Site RAM Soluções index" class="img-fluid">
                                 <div class="portfolioBotao">
                                     <div class="d-block text-center">
                                         <p class="portfolioLegenda">Site da RAM Soluções</p>
@@ -128,9 +139,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-md-4">
+                        <div class="col-6 col-md-4 mb-4">
                             <div class="portfolioItem" data-toggle="modal" data-target="#podiumModal">
-                                <img src="img/portfolio/podium/aluno2.png" alt="Sistema Grupo Podium" class="img-fluid">
+                                <img src="img/portfolio/podium/previa.png" alt="Sistema Grupo Podium" class="img-fluid">
                                 <div class="portfolioBotao">
                                     <div class="d-block text-center">
                                         <p class="portfolioLegenda">Sistema do Grupo Podium</p>
@@ -147,11 +158,19 @@
                 <div class="container">
                     <h1>Clientes</h1>
                     <p>Estes sãos os meus clientes que já confiam nos meus serviços! Fale com eles e tire todas suas dúvidas sobre minhas competências!</p>
-                    <div class="clientes">
-                        <img src="img/clientes/percurso.png" alt="Percurso logomarca" width="150px">
-                        <img src="img/clientes/petkta.png" alt="PetKta logomarca" width="150px">
-                        <img src="img/clientes/ram.png" alt="RAM Soluções logomarca" width="150px">
-                        <img src="img/clientes/podium.png" alt="Grupo Podium logomarca" width="100px">
+                    <div class="clientes row d-flex align-items-center">
+                        <div class="col-6 col-md-2">
+                            <img src="img/clientes/percurso.png" alt="Percurso logomarca" style="max-width: 100%; max-height: 70px">
+                        </div>
+                        <div class="col-6 col-md-2">
+                            <img src="img/clientes/petkta.png" alt="PetKta logomarca" style="max-width: 100%; max-height: 70px">
+                        </div>
+                        <div class="col-6 col-md-2">
+                            <img src="img/clientes/ram.png" alt="RAM Soluções logomarca" style="max-width: 100%; max-height: 70px">
+                        </div>
+                        <div class="col-6 col-md-2">
+                            <img src="img/clientes/podium.png" alt="Grupo Podium logomarca" style="max-width: 100%; max-height: 70px">
+                        </div>
                     </div>
                 </div>
             </section>
@@ -174,6 +193,47 @@
             <h1>antony<span class="leme">leme</span></h1>
             <p>Desenvolvimento de sites e sistemas web em Cataguases e região.</p>
         </footer>
+
+        <div class="modal fade" id="percursoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Site do Percurso</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>O projeto inclui também além do site, um sistema de gerenciamento dos conteúdos de forma dinâmica e de interação entre alunos e professores.</p>
+                        
+                        <div class="bd-example">
+                            <div id="carouselExampleCaptions3" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleCaptions3" data-slide-to="0" class="active"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/portfolio/percurso/index.png" class="d-block w-100" alt="Página principal do Percurso.">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Página principal do Percurso</h5>
+                                            <p>Contém todos os conteúdos do site em uma única página.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleCaptions3" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleCaptions3" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="modal fade" id="petModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl" role="document">
