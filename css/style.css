@@ -400,11 +400,11 @@ footer p{
         padding-bottom: 30px;
     }
     #contato input[type="text"]{
-        width: 37.5%;
+        width: 100%;
     }
     
     #contato input[type="submit"]{
-        width: 25%;
+        width: 100%;
     }
     #contato h2{
         font-size: 1.6em;
